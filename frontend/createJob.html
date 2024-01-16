@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Jobs</title>
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/form.css">
+</head>
+
+<body>
+    <div id="navbar">
+        <h2>Job Portal</h2>
+        <div>
+            <a href="./index.html">
+                <h2>Post Jobs</h2>
+            </a>
+            <a href="./newStock.html">
+                <h2>Get Jobs</h2>
+            </a>
+        </div>
+    </div>
+
+    <form>
+        <input placeholder="Company Name" id="name" type="text" />
+        <input placeholder="City" id="city" type="text" />
+        <input placeholder="Location" id="loc" type="text" />
+        <select id="role">
+            <option value="">Job Role</option>
+            <option value="fe">Front End</option>
+            <option value="be">Back End</option>
+            <option value="fs">Full Stack</option>
+        </select>
+
+        <select id="level">
+            <option value="">Employee Level</option>
+            <option value="junior">Junior</option>
+            <option value="senior">Senior</option>
+            <option value="fs"></option>
+        </select>
+
+        <select id="language">
+            <option value="">Language</option>
+            <option value="fe"></option>
+            <option value="be">Senior</option>
+            <option value="fs"></option>
+        </select>
+
+        <select id="contract">
+            <option value="">Contract Type</option>
+            <option value="FT">Full Time</option>
+            <option value="PT">Part Time</option>
+        </select>
+
+        <select id="position">
+            <option value="bedev">Backend Developer</option>
+            <option value="fedev">Junior Frontend Developer</option>
+            <option value="jbedev">Junior Backend Developer</option>
+            <option value="fsd">Full Stack Developer</option>
+        </select>
+
+
+        <input type="text" id="sector" placeholder="Sector" />
+        <input placeholder="Stock Price" id="price" type="number" />
+        <input placeholder="Quantity" id="quantity" type="number" />
+        <label for="">Add Date:- </label>
+        <input type="date" id="addDate" />
+        <input type="submit" value="Add Stock" />
+    </form>
+</body>
+<script type="module" src="./scripts/newStock.js"></script>
+
+</html>
